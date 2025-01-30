@@ -1,0 +1,379 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(93, 206, 153);
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    padding: 20px;
+}
+header {
+    background: rgb(216, 243, 220);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+nav a {
+    margin: 0 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15;
+    display: flex;
+    flex-direction:row;
+}
+h1{
+    background-color: rgb(122,155,121);
+    font-size: 30px;
+}
+img{
+    background-color: rgb(45,87,44);
+}
+#pre1{
+    background-color: rgb(183, 228, 199);
+    color: #ffffff;
+}
+#res1{
+    background-color: rgb(144, 213, 178);
+}
+#img1{
+    width: 300px; 
+    height: 240px;
+}
+#pre2{
+    background-color: rgb(183, 228, 199);
+    color: #ffffff;
+}
+#res2{
+    background-color: rgb(144, 213, 178);
+}
+#img2{
+    background-color: rgb(45,87,44);
+    width: 300px; 
+    height: 240px;
+}
+#pre3{
+    background-color: rgb(183, 228, 199);
+    color: #ffffff;
+}
+#res3{
+    background-color: rgb(144, 213, 178);
+}
+#img3{
+    background-color: rgb(45,87,44);
+    width: 300px; 
+    height: 240px;
+}
+main {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section{
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    width: 80%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+    background: #00796b;
+    color: white;
+    padding: 10px 0;
+}
+.button {
+    background-color: #009688;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+ol{
+    font-family: 'Times New Roman', Times, serif;
+}
+tr{
+    color: firebrick;
+}
+td{
+    color:black;
+}
+.mapa-conceptual{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.titulo-concepto {
+    margin-bottom: 20px;
+}
+.titulo-concepto h2 {
+    margin: 0;
+    font-size: 2em;
+}
+.titulo-concepto p {
+    font-size: 1.2em;
+}
+.conceptos {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 30px;
+}
+.concepto {
+    text-align: center;
+    width: 30%;
+}
+.concepto h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+.concepto p {
+    font-size: 1.2em;
+}
+.imagenes {
+    margin-top: 30px;
+}
+.imagenes img {
+    width: 200px;
+    height: 200px;
+    margin: 0 20px;
+}
+table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+td {
+    font-size: 1.1em;
+}
+
+.sopa-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sopa {
+    display: grid;
+    grid-template-columns: repeat(15, 30px);
+    grid-gap: 2px;
+    margin-bottom: 20px;
+}
+
+.sopa span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sopa span.found {
+    background-color: #76c7c0;
+    text-decoration: line-through;
+}
+
+.palabras-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.palabra {
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.palabra.found {
+    text-decoration: line-through;
+    color: #76c7c0;
+}
+.container {
+    background-color: bisque;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px burlywood;
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Título */
+.titulo {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    background-color: antiquewhite;
+}
+
+/* Estilo de las preguntas */
+.quiz {
+    margin-bottom: 30px;
+    
+}
+
+.question {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Estilo de las respuestas */
+.answers {
+    list-style-type: none;
+    padding: 0;
+}
+
+.answer-item {
+    margin: 10px 0;
+}
+
+.answer-input {
+    display: none;
+}
+
+.answer-label {
+    background-color: beige;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: block;
+}
+
+.answer-label:hover {
+    background-color: blanchedalmond;
+    transform: scale(1.05);
+}
+
+/* Respuestas correctas */
+.answer-input:checked + .answer-label {
+    background-color: #32cd32;
+}
+
+/* Respuestas incorrectas */
+.answer-input:checked + .answer-label {
+    background-color: #ff4500;
+}
+
+/* Mensaje de resultado */
+.result {
+    margin-top: 40px;
+}
+
+.result-title {
+    font-size: 2rem;
+    color: #32cd32;
+}
+
+.result-message {
+    font-size: 1.2rem;
+    color: #fff;
+}
+/* Contenedor del mapa conceptual */
+.mapa {
+    background-color: #fff;
+    width: 80%;
+    max-width: 900px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal */
+.titulobio {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #0066cc;
+}
+
+/* Estilo para cada concepto */
+.conceptobio {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #e6f7ff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+#airebio {
+    background-color: #e6f7ff;
+    border-left: 5px solid #66ccff;
+}
+
+#aguabio {
+    background-color: #e0f7fa;
+    border-left: 5px solid #00bcd4;
+    margin-left: auto; /* Esto hace que el contenedor se desplace hacia la derecha */
+    margin-right: 0; /* Puedes ajustar el margen a la derecha si lo necesitas */
+}
+
+#suelobio {
+    background-color: #f1f8e9;
+    border-left: 5px solid #8bc34a;
+}
+
+#tierrabio {
+    background-color: #f9fbe7;
+    border-left: 5px solid #ffeb3b;
+    margin-left: auto; /* Esto hace que el contenedor se desplace hacia la derecha */
+    margin-right: 0; /* Puedes ajustar el margen a la derecha si lo necesitas */
+}
+
+/* Subtítulos */
+.subtitulobio {
+    font-size: 1.8rem;
+    color: #0066cc;
+    margin-bottom: 15px;
+}
+
+/* Descripción de los conceptos */
+.descripcionbio {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Resaltado de texto */
+.descripcionbio strong {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Efectos de hover para cada concepto */
+.conceptobio:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+    background: #00796b;
+    color: white;
+    padding: 10px 0;
+}
