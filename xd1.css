@@ -1,13 +1,13 @@
 body{
     font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(93, 206, 153);
+    background-color: rgb(242, 235, 227);
     font-family: 'Roboto', sans-serif;
     margin: 10px;
     padding: 20px;
 }
 header {
-    background: rgb(216, 243, 220);
-    color: #ffffff;
+    background: rgb(237, 223, 247);
+    color: #000000;
     padding: 20px;
     text-align: center;
 }
@@ -27,44 +27,44 @@ nav a {
     flex-direction:row;
 }
 h1{
-    background-color: rgb(122,155,121);
+    background-color: rgb(237,223,247);
     font-size: 30px;
 }
 img{
-    background-color: rgb(45,87,44);
+    background-color: rgb(242, 235, 227);
 }
 #pre1{
-    background-color: rgb(183, 228, 199);
-    color: #ffffff;
+    background-color: rgb(242, 235, 227);
+    color: #000000;
 }
 #res1{
-    background-color: rgb(144, 213, 178);
+    background-color: rgb(242, 235, 227);
 }
 #img1{
     width: 300px; 
     height: 240px;
 }
 #pre2{
-    background-color: rgb(183, 228, 199);
-    color: #ffffff;
+    background-color: rgb(242, 235, 227);
+    color: #000000;
 }
 #res2{
-    background-color: rgb(144, 213, 178);
+    background-color: rgb(242, 235, 227);
 }
 #img2{
-    background-color: rgb(45,87,44);
+    background-color: rgb(242, 235, 227);
     width: 300px; 
     height: 240px;
 }
 #pre3{
-    background-color: rgb(183, 228, 199);
-    color: #ffffff;
+    background-color: rgb(242, 235, 227);
+    color: #000000;
 }
 #res3{
-    background-color: rgb(144, 213, 178);
+    background-color: rgb(242, 235, 227);
 }
 #img3{
-    background-color: rgb(45,87,44);
+    background-color: rgb(242, 235, 227);
     width: 300px; 
     height: 240px;
 }
@@ -213,26 +213,26 @@ td {
     text-decoration: line-through;
     color: #76c7c0;
 }
+/* Estilo del contenedor principal */
 .container {
-    background-color: bisque;
+    background-color: rgba(242, 235, 227);
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 4px 15px burlywood;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     width: 90%;
     max-width: 600px;
 }
 
 /* Título */
-.titulo {
+.quiz-title {
     font-size: 2.5rem;
     margin-bottom: 30px;
-    background-color: antiquewhite;
+    background-color: rgba(242, 235, 227);
 }
 
 /* Estilo de las preguntas */
 .quiz {
     margin-bottom: 30px;
-    
 }
 
 .question {
@@ -246,7 +246,7 @@ td {
     padding: 0;
 }
 
-.answer-item {
+.answers li {
     margin: 10px 0;
 }
 
@@ -255,7 +255,7 @@ td {
 }
 
 .answer-label {
-    background-color: beige;
+    background-color: blanchedalmond;
     padding: 15px;
     border-radius: 8px;
     font-size: 1.2rem;
@@ -265,33 +265,30 @@ td {
 }
 
 .answer-label:hover {
-    background-color: blanchedalmond;
+    background-color: bisque;
     transform: scale(1.05);
 }
 
 /* Respuestas correctas */
-.answer-input:checked + .answer-label {
-    background-color: #32cd32;
+input[type="radio"]:checked + .answer-label.correct {
+    background-color: #32cd32; /* Verde para la respuesta correcta */
 }
 
 /* Respuestas incorrectas */
-.answer-input:checked + .answer-label {
-    background-color: #ff4500;
+input[type="radio"]:checked + .answer-label.incorrect {
+    background-color: #ff4500; /* Rojo para la respuesta incorrecta */
 }
 
-/* Mensaje de resultado */
-.result {
-    margin-top: 40px;
+/* Estilo para las respuestas correctas */
+input[type="radio"]#q1a1:checked + .answer-label,
+input[type="radio"]#q2a2:checked + .answer-label,
+input[type="radio"]#q3a1:checked + .answer-label {
+    background-color: #32cd32; /* Verde para la respuesta correcta */
 }
 
-.result-title {
-    font-size: 2rem;
-    color: #32cd32;
-}
-
-.result-message {
-    font-size: 1.2rem;
-    color: #fff;
+/* Estilo para las respuestas incorrectas */
+input[type="radio"]:checked:not(#q1a1):not(#q2a2):not(#q3a1) + .answer-label {
+    background-color: #ff4500; /* Rojo para la respuesta incorrecta */
 }
 /* Contenedor del mapa conceptual */
 .mapa {
@@ -307,7 +304,7 @@ td {
 .titulobio {
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: #0066cc;
+    color: #000000;
 }
 
 /* Estilo para cada concepto */
@@ -373,7 +370,7 @@ footer {
     text-align: center;
     margin-top: 20px;
     font-size: 0.8em;
-    background: #00796b;
-    color: white;
+    background: beige;
+    color: rgb(0, 0, 0);
     padding: 10px 0;
 }
